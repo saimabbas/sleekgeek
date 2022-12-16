@@ -217,18 +217,46 @@ let GetYoursAnim = gsap.timeline({
 });
 
 GetYoursAnim.fromTo(
-  ".getyours-content h2",
+  ".figure-left",
   {
-    y: "5rem",
+    left: "-5rem",
     opacity: 0,
   },
   {
-    y: "0",
+    left: "2rem",
     opacity: 1,
     duration: 1.25,
     ease: Back.easeInOut,
   }
 )
+  .fromTo(
+    ".figure-right",
+    {
+      right: "-5rem",
+      opacity: 0,
+    },
+    {
+      right: "2rem",
+      opacity: 1,
+      duration: 1.25,
+      ease: Back.easeInOut,
+    },
+    "<0"
+  )
+  .fromTo(
+    ".getyours-content h2",
+    {
+      y: "5rem",
+      opacity: 0,
+    },
+    {
+      y: "0",
+      opacity: 1,
+      duration: 1.25,
+      ease: Back.easeInOut,
+    },
+    "<0"
+  )
   .fromTo(
     ".getyours-content p",
     {
