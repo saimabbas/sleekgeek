@@ -223,7 +223,7 @@ GetYoursAnim.fromTo(
     opacity: 0,
   },
   {
-    left: "2rem",
+    left: "-2rem",
     opacity: 1,
     duration: 1.25,
     ease: Back.easeInOut,
@@ -236,7 +236,7 @@ GetYoursAnim.fromTo(
       opacity: 0,
     },
     {
-      right: "2rem",
+      right: "-2rem",
       opacity: 1,
       duration: 1.25,
       ease: Back.easeInOut,
