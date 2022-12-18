@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @font-face {
   font-family: "ReglisseFill-WyWzn";
-  src: url("/assets/fonts/ReglisseFill-WyWzn.ttf") format("ttf"),
-    url("/assets/fonts/ReglisseFill-WyWzn.otf") format("otf"),
-    url("/assets/fonts/ReglisseFill-WyWzn.woff") format("woff"),
-    url("/assets/fonts/ReglisseFill-WyWzn.woff2") format("woff2");
+  src: url("../assets/fonts/ReglisseFill-WyWzn.ttf") format("ttf"),
+    url("../assets/fonts/ReglisseFill-WyWzn.otf") format("otf"),
+    url("../assets/fonts/ReglisseFill-WyWzn.woff") format("woff"),
+    url("../assets/fonts/ReglisseFill-WyWzn.woff2") format("woff2");
   font-style: normal;
 }
 :root {
@@ -156,6 +156,7 @@ header {
 .header-left img {
   width: max-content;
   max-height: 4rem;
+  object-fit: contain;
 }
 .header-right {
   width: max-content;
@@ -326,12 +327,6 @@ header .dropdown .dropdown-menu li:last-child p {
   line-height: 10rem;
   white-space: nowrap;
 }
-.hero-right h1:nth-child(1) {
-  display: block;
-}
-.hero-right h1:nth-child(2) {
-  display: none;
-}
 .hero-right p {
   font-size: 2rem;
   margin: 3.5rem 0;
@@ -498,6 +493,7 @@ header .dropdown .dropdown-menu li:last-child p {
 }
 .cs-pie-grid-card div span {
   font-size: 5rem;
+  font-weight: 400;
 }
 .cs-pie-grid-card {
   width: max-content;
@@ -532,6 +528,19 @@ header .dropdown .dropdown-menu li:last-child p {
   font-weight: bold;
   font-family: sans-serif;
 }
+/* .seconds-pie.pie {
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  from {
+    --p: 100 !important;
+  }
+  to {
+    --p: 0 !important;
+  }
+} */
+
 .pie:before,
 .pie:after {
   content: "";
@@ -904,12 +913,6 @@ header .dropdown .dropdown-menu li:last-child p {
   .hero-left img {
     max-width: 450px;
   }
-  .hero-right h1:nth-child(1) {
-    display: none;
-  }
-  .hero-right h1:nth-child(2) {
-    display: block;
-  }
   .hero-right h1 {
     white-space: unset;
   }
@@ -1014,7 +1017,7 @@ header .dropdown .dropdown-menu li:last-child p {
     max-height: 30rem;
   }
   .hero-right h1 {
-    font-size: 7rem;
+    font-size: 6rem;
     line-height: 5.5rem;
   }
   .hero-content {
